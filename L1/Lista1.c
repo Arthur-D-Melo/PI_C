@@ -15,5 +15,6 @@ int main() {
     printf("Resultado: %.2f\n", resultado);
     printf("quadrado: %f\n", pow(base, numero));
     printf("Raiz: %f", pow(base, 1/numero));
+    //aaaaa
     return 0;
 }
