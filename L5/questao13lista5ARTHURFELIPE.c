@@ -23,5 +23,5 @@ void main(){
     }
 
     printf("Numeros iguais ao ultimo: %d", acc);
-
+    
 }
