@@ -76,5 +76,8 @@ int main() {
     }
 
     printf("O gasto total de calorias foi %d.", cal);
+
+
+
     return 0;
 }
