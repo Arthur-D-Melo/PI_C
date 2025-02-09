@@ -14,17 +14,27 @@ Observações:
 #include <string.h>
 
 int main() {
-    char opcao, numero[15], novonumero[15];
+    char opcao, numero[15], novonumero[15]; 
     float numrad;
-    int tamanho;
+    int tamanho, numeros10[10], maior;
 
     do{
         printf("\nMENU\nA- IMPRIME MAIOR DE 10 NUMEROS\nB- ENTRA COM UM NUMERO E SEU NUMERO DE DIGITOS E IMPRIME INVERTIDO\nC- CALCULA E IMPRIME A TANGENTE DE UM ANGULO EM GRAUS\nF- TERMINA O ALGORITMO\n");
         scanf(" %c", &opcao);
 
         if ((opcao == 'A')||(opcao == 'a')){
-
-
+            for(int i = 0; i <10; i++){
+                printf("(%d)Digite o numero:", i +1);
+                scanf("%d", &numeros10[i]);
+            }
+            for(int i = 0; i <9; i++){
+                if(numeros10[i] > numeros10[i+1]){
+                    maior = numeros10[i];
+                }else{
+                    maior = numeros10[i+1];
+                }
+            }
+            printf("O maior numero eh %d", maior);
 
         } else if ((opcao == 'B')||(opcao == 'b')){
             printf("Insira um numero:\n");
